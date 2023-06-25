@@ -1,7 +1,7 @@
 ---
 layout: post
 title: M1 芯片 Mac 上 Homebrew 安装
-categories: [Mac]
+categories: [mac]
 description: 转载
 keywords: mac, arm, homebrew, brew
 mermaid: false
@@ -86,7 +86,7 @@ alias ibrew='arch -x86_64 /usr/local/bin/brew'
 
 **注意：本文中的安装脚本会设置中科大源镜像，如果你也想设置`cask`和`bottles`的镜像，请按下面注释部分选择执行代码。**
 
-更详细的教程可以参考前面的文章：[设置镜像](/guide/start/#part3) 。
+更详细的教程可以参考前面的文章：[设置镜像](https://brew.idayer.com/guide/change-source) 。
 
 执行时根据实际情况修改`"$(brew --repo)"`代码中的`brew`。
 
@@ -110,7 +110,3 @@ source ~/.zprofile
 echo 'export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles/bottles' >> ~/.bash_profile
 source ~/.bash_profile
 ```
-
-**如果觉得教程有用，欢迎多多分享宣传~**
-
-[mac]:[https://zhuanlan.zhihu.com/p/90508170][github]:[https://github.com/ineo6/homebrew-install]
