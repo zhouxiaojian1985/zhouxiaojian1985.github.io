@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Docker入门教程2——将映像作为容器运行
+title: Docker入门教程3——将映像作为容器运行
 categories: [docker, devops, python]
 description:
 keywords:
@@ -66,13 +66,13 @@ CONTAINER ID   IMAGE           COMMAND                   CREATED         STATUS 
 ```
 
 `docker ps`命令提供了关于正在运行的容器的一些信息:
-    - 容器ID
-    - 镜像
-    - 启动命令
-    - 创建时间
-    - 状态
-    - 暴露的端口
-    - 容器的名称。
+- 容器ID
+- 镜像
+- 启动命令
+- 创建时间
+- 状态
+- 暴露的端口
+- 名称
 
 启动容器时如果没有提供容器的名称，Docker会生成一个随机的名称（这里是competent_tu）。
 运行`docker stop`命令可以停止容器
@@ -82,7 +82,7 @@ docker stop competent_tu
 competent_tu
 ```
 
-运行`docker ps`命令以查现在容器已经不在运行了
+再次运行`docker ps`命令，现在容器已经不在运行了
 ```
 docker ps
 CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
@@ -144,7 +144,7 @@ ef0d3a3fe979   python-docker   "python3 -m flask ru…"   20 minutes ago   Exite
 e0e002696653   python-docker   "python3 -m flask ru…"   25 minutes ago   Exited (0) 25 minutes ago               tender_austin
 c6e148d1e00d   hello-world     "/hello"                  24 hours ago     Exited (0) 24 hours ago                 epic_grothendieck
 ```
-可以看到所有状态是`Exited`的容器
+可以看到所有容器，包括状态是`Exited`，表示已经被stop的容器
 
 `Tip`: 快速删除所有容器
 
