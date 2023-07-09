@@ -18,7 +18,7 @@ mindmap2: false
 
 ## 下载官方的pkg文件，双击后安装
 
-![docker arch](/images/posts/node/nodejs_install.png)
+![nodejs install](/images/posts/node/nodejs_install.png)
 
 最后
 ```
