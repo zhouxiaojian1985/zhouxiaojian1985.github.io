@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 安装golang
+title: Go入门教程0——安装golang
 categories: [golang, go]
 description:
 keywords: golang, go
@@ -16,12 +16,37 @@ mindmap2: false
 
 镜像地址 [https://golang.google.cn/dl/](https://golang.google.cn/dl/)
 
+
+# Ubuntu安装方式
+
+## amd64
+```
+wget https://golang.google.cn/dl/go1.20.6.linux-amd64.tar.gz
+sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.20.6.linux-amd64.tar.gz
+```
+
+## arm64
+
+下载，删除旧版本，并安装
+```
+wget https://golang.google.cn/dl/go1.20.6.linux-arm64.tar.gz
+sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.20.6.linux-arm64.tar.gz
+```
+
+验证
+```
+export PATH=$PATH:/usr/local/go/bin
+go version
+go version go1.20.6 linux/arm64
+```
+
+
+
 # mac m1 推荐安装方式
 
 ## 下载官方ARM64版本的pkg文件，双击后安装
 
 ![go install](/images/posts/go/go_install.png)
-
 
 ## 验证
 ```
